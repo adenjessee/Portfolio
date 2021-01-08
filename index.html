@@ -27,6 +27,30 @@
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 
+
+  <!-- Style for video head -->
+  <style>
+
+    .viewport-header {
+      position: relative;
+      height: 100vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    video {
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+  </style>
+
 </head>
 
 <body>
@@ -50,13 +74,41 @@
 
   </header><!-- End Header -->
 
+
+
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+  <!-- <section id="hero" class="d-flex flex-column justify-content-center"> -->
+  <section id="hero">
+    <!-- <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Aden Jessee</h1>
       <p>I'm a Full Stack Developer</p>
+    </div> -->
+  </section>
+  <!-- End Hero -->
+  
+
+  <header>
+    <div class="overlay"></div>
+    <video class="text-center playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="video.mp4" type="video/mp4">
+        
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Video Header</h1>
+          <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+        </div>
+      </div>
     </div>
-  </section><!-- End Hero -->
+  </header>
+
+  <header class="viewport-header">
+    <h1>
+      Explore
+      <span>Montana</span>
+    </h1>
+  </header>
 
   <main id="main">
 
