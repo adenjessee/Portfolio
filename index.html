@@ -62,7 +62,7 @@
       margin-right: auto;
       padding: 40px;
       max-width: 650px;
-      background-color: #EEEEEEDD;
+      background-color: #EEEEEEE0;
       border-radius: 8px;
     }
 
@@ -72,7 +72,7 @@
 
     .main-page {
       margin: 5%;
-      background-color: #EEEEEEEE;
+      background-color: #EEEEEEE9;
       border-radius: 8px;
     }
 
@@ -102,20 +102,41 @@
       width: 10vw;
     }
 
-    .top-button {
+    .top-button-area {
+      color: rgb(236, 59, 15);
+    }
+
+    #topper a {
+      font-size: 18px;
+      display: inline-block;
       background: #0563bb;
-      border: 0;
-      padding: 10px 35px;
       color: #fff;
-      transition: 0.4s;
-      border-radius: 50px;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      margin-top: 15px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+    }
+
+    #topper a:hover {
+      background: #0678e3;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .transition-smooth {
+      scroll-behavior: smooth; 
     }
 
   </style>
 
 </head>
 
-<body>
+<body class="transition-smooth">
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none">
@@ -169,24 +190,24 @@
           I'm a Full Stack Web Developer
         </h5>
 
-        <div class="text-center">
-          <a href="#contact">
-            <button id="button" type="submit" class="top-button">
-              Hire Me
-            </button>
-          </a>
+        <div id="hire-me" class="contact">
+          <div id=topper class="php-email-form">
+            <div class="text-center">
+              <button onclick="window.location.href='#contact';" href="#contact" type="submit">Hire Me</button>
+            </div>
+          </div>
         </div>
 
-        <div class="footer-container footer-page">
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/aden-jessee-4b3815189/" target=”_blank”><i class="bx bxl-linkedin"></i></a>
-            <a href="https://github.com/adenjessee" target=”_blank”><i class="bx bxl-github"></i></a>
-          </div>
+
+        <div id = "topper" class="social-links text-center">
+          <a href="https://www.linkedin.com/in/aden-jessee-4b3815189/" target=”_blank”><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/adenjessee" target=”_blank”><i class="bx bxl-github"></i></a>
         </div>
 
       </div>
     </div>
   </div>
+
 
   <!-- <div class="card" style="width: 18rem;">
     <div class="card-body">
@@ -196,6 +217,7 @@
       </header>
     </div>
   </div> -->
+
 
   <main id="main" class="card main-page">
 
