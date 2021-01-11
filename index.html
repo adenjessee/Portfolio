@@ -168,18 +168,6 @@
     </nav><!-- .nav-menu -->
 
   </header><!-- End Header -->
-
-
-
-  <!-- ======= Hero Section ======= -->
-  <!-- <section id="hero" class="d-flex flex-column justify-content-center"> -->
-  <!-- <section id="hero">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Aden Jessee</h1>
-      <p>I'm a Full Stack Developer</p>
-    </div> 
-  </section> -->
-  <!-- End Hero -->
   
   <!-- The Background Video -->
   <header>
@@ -251,13 +239,13 @@
                   <li><i class="icofont-rounded-right"></i> <strong>LinkedIn:</strong> 
                     <a target=”_blank” href="https://www.linkedin.com/in/aden-jessee-4b3815189/">Here is my LinkedIn account.</a>
                   </li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Resume:</strong> <a href="#resume">Here is my Resume.</a></li>
+                  <!-- <li><i class="icofont-rounded-right"></i> <strong>Resume:</strong> <a href="#resume">Here is my Resume.</a></li> -->
+                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> adencjessee@gmail.com</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <li><i class="icofont-rounded-right"></i> <strong>Location:</strong> USA</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> adencjessee@gmail.com</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                 </ul>
               </div>
@@ -272,8 +260,16 @@
             </p>
           </div>
         </div>
-
       </div>
+
+      <div class="contact" data-toggle="modal" data-target="#resume-modal">
+        <div class="php-email-form">
+          <div class="text-center">
+            <button onclick="window.location.href='#contact';" type="submit" style="margin-top:20px;">My Resume</button> 
+          </div>
+        </div>
+      </div>
+
     </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
@@ -808,5 +804,32 @@
   </div>
 </div>
 
+<!-- Download Resume Modal -->
+<div class="modal fade" id="resume-modal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resumeModal">Resume</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="text-center">
+          Thank you for visting my website. <br> click download to get a PDF copy of my resume. <br> Thank you!
+          <div class="contact">
+            <div class="php-email-form">
+              <div class="text-center">
+                <a id="download" href="./Resume.pdf" download="./Resume.pdf" >
+                  <button type="submit" style="margin-top:20px;">Download</button> 
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>
